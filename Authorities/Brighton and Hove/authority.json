@@ -24,6 +24,30 @@
                     }
                 }
             }
+        },
+        {
+            "name": "Refuse rounds.csv",
+            "parse_options": {
+                "columns": true
+            },
+            "fields": {
+                "property": {
+                    "street": "Street name",
+                    "town": "Locality",
+                    "postcode": "Post Code",
+                    "number": "Address",
+                    "raw": "Address"
+                },
+                "rounds": {
+                    "refuse": {
+                        "round": "Round",
+                        "regex": {
+                            "Ref [0-9]+ ([A-Za-z0-9 ]+)": "$1"
+                        }
+                    }
+                }
+            }
         }
+
     ]
 }
