@@ -1,0 +1,54 @@
+{
+    "name": "Ards and North Down",
+    "code": "N09000011",
+    "files": [
+        {
+            "name": "Collection Information.csv",
+            "skip_rows": 1,
+            "parse_options": {
+                "columns": ["refuse_service", "refuse_day",	"refuse_week",	
+                    "recycling_service", "recycling_day",	"recycling_week",	
+                    "green_service", "green_day", "green_week",	
+                    "glass_service", "glass_day",	"glass_week",	
+                    "Calendar", "Ref Round", "Rec Round", "Grn Round", "Glass Round", "Address 1", 
+                    "Address 2", "Address 3", "Address 4", "Address 5", "Address 6", "Address 7", 
+                    "Address 8", "Address 9", "Address 10", "Street", "Locale", "Locality", "Town", 
+                    "PostCode"
+                ]
+            },
+            "fields": {
+                "property": {
+                    "unit": "Address 4",
+                    "house_name": "Address 5",
+                    "house_number": "Address 6",
+                    "street": "Street",
+                    "locality": "Locality",
+                    "town": "Town",
+                    "postcode": "PostCode"
+                },
+                "rounds": {
+                    "refuse": {
+                        "day": "refuse_day",
+                        "week": "refuse_week"
+                    },
+                    "recycling": {
+                        "day": "recycling_day",
+                        "week": "recycling_week"
+                    },
+                    "green": {
+                        "day": "green_day",
+                        "week": "green_week"
+                    },
+                    "glass": {
+                        "day": "glass_day",
+                        "week": "glass_week"
+                    }
+                }
+            }
+                
+            
+
+            
+        }
+    ]
+}

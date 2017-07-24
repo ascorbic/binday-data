@@ -1,0 +1,44 @@
+{
+    "name": "Blackburn with Darwen",
+    "code": "E06000008",
+    "files": [
+         {
+            "name": "Refuse.csv",
+            "parse_options": {
+                "columns": true
+            },
+            "fields": {
+                "property": {
+                    "uprn": "UPRN",
+                    "postcode": "Postcode",
+                    "raw": "Postal_Address"
+                },
+                "rounds": {
+                    "refuse": {
+                        "day": "Collection_day",
+                        "week": "Week"
+                    }
+                }
+            }
+        },
+        {
+            "name": "Recycling.csv",
+            "parse_options": {
+                "columns": true
+            },
+            "fields": {
+                "property": {
+                    "uprn": "UPRN",
+                    "postcode": "Postcode",
+                    "raw": "Postal_Address"
+                },
+                "rounds": {
+                    "recycling": {
+                        "round": "Week"
+                    }
+                }
+            }
+        }
+               
+    ]
+}

@@ -1,0 +1,4 @@
+# Binday data
+The raw data for the Binday project, to assemble a dataset of waste and recycling collection days. The source data, in various formats, has been provided via FOI requests to each local authority. The cleaned, parsed data is in a standard format, which is currently subject to change. The authority.json file specifies the format of the source files, to enable them to be parsed and converted into the standard format. The parser is in the separate project @ascorbic/binday-parser
+
+The raw source data is copyright the original authority, and released under various licences, mainly the OGL unless specified. The parsed data and authority.json files are copyright Matt Kane and released under the Open Government Licence 3.

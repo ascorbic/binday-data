@@ -1,0 +1,28 @@
+{
+    "name": "Barnsley",
+    "code": "E06000008",
+    "files": [
+        {
+            "name": "FOIA990 Waste Collection Dates.csv",
+            "parse_options": {
+                "columns": true
+            },
+            "fields": {
+                "property": {
+                    "street": "Streetname",
+                    "locality": "Locale",
+                    "postcode": "PostCode",
+                    "raw": "Address"
+                },
+                "rounds": {
+                    "default": {
+                        "round": "Calendar"
+                    }
+                },
+                "default": {
+                    "town": "Barnsley"
+                }
+            }
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "name": "Basildon",
+    "code": "E07000066",
+    "files": [
+        {
+            "name": "attachment.csv",
+            "skip_rows": 4,
+            "parse_options": {
+                "columns": ["UPRN", "Address",	"PostCode",	
+                    "refuse_day", "refuse_week", "garden_day", "garden_week", "recycling_day",	"recycling_week",	
+                    "glass_day",	"glass_week"]
+            },
+            "fields": {
+                "property": {
+                    "raw": "Address",
+                    "postcode": "PostCode"
+                },
+                "rounds": {
+                    "refuse": {
+                        "day": "refuse_day",
+                        "week": "refuse_week",
+                        "map": {
+                            "Wednesday12/07/2017": "WedA",
+                            "Tuesday18/07/2017": "TueB",
+                            "Monday17/07/2017": "MonB",
+                            "Friday14/07/2017": "FriA",
+                            "Thursday13/07/2017": "ThuA",
+                            "Monday24/07/2017": "MonA",
+                            "Friday21/07/2017": "FriB",
+                            "Thursday20/07/2017": "ThuB",
+                            "Wednesday19/07/2017": "WedB",
+                            "Tuesday25/07/2017": "TueA"
+                        }
+                    },
+                    "recycling": {
+                        "day": "recycling_day",
+                        "week": "recycling_week",
+                        "map": {
+                            "Wednesday12/07/2017": "WedA",
+                            "Tuesday18/07/2017": "TueB",
+                            "Monday17/07/2017": "MonB",
+                            "Friday14/07/2017": "FriA",
+                            "Thursday13/07/2017": "ThuA",
+                            "Monday24/07/2017": "MonA",
+                            "Friday21/07/2017": "FriB",
+                            "Thursday20/07/2017": "ThuB",
+                            "Wednesday19/07/2017": "WedB",
+                            "Tuesday25/07/2017": "TueA"
+                        }
+                    },
+                    "garden": {
+                        "day": "garden_day",
+                        "week": "garden_week",
+                        "map": {
+                            "Wednesday12/07/2017": "WedA",
+                            "Tuesday18/07/2017": "TueB",
+                            "Monday17/07/2017": "MonB",
+                            "Friday14/07/2017": "FriA",
+                            "Thursday13/07/2017": "ThuA",
+                            "Monday24/07/2017": "MonA",
+                            "Friday21/07/2017": "FriB",
+                            "Thursday20/07/2017": "ThuB",
+                            "Wednesday19/07/2017": "WedB",
+                            "Tuesday25/07/2017": "TueA"
+                        }
+                    },
+                    "glass": {
+                        "day": "glass_day",
+                        "week": "glass_week",
+                        "map": {
+                            "Wednesday12/07/2017": "WedA",
+                            "Tuesday18/07/2017": "TueB",
+                            "Monday17/07/2017": "MonB",
+                            "Friday14/07/2017": "FriA",
+                            "Thursday13/07/2017": "ThuA",
+                            "Monday24/07/2017": "MonA",
+                            "Friday21/07/2017": "FriB",
+                            "Thursday20/07/2017": "ThuB",
+                            "Wednesday19/07/2017": "WedB",
+                            "Tuesday25/07/2017": "TueA"
+                        }
+                    }
+                }
+            }
+                
+            
+
+            
+        }
+    ]
+}
