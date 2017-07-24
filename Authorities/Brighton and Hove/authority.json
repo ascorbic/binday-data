@@ -1,0 +1,29 @@
+{
+    "name": "Brighton and Hove",
+    "code": "E06000043",
+    "files": [
+        {
+            "name": "Recycling rounds.csv",
+            "parse_options": {
+                "columns": true
+            },
+            "fields": {
+                "property": {
+                    "street": "Street name",
+                    "town": "Locality",
+                    "postcode": "Post Code",
+                    "number": "Address",
+                    "raw": "Address"
+                },
+                "rounds": {
+                    "recycling": {
+                        "round": "Round",
+                        "regex": {
+                            "Rec [0-9]+ ([A-Za-z0-9 ]+)": "$1"
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
