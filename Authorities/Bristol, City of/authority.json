@@ -1,0 +1,44 @@
+{
+    "name": "Bristol",
+    "code": "E06000023",
+    "files": [
+        {
+            "name": "recycling.csv",
+            "parse_options": {
+                "columns": true
+            },
+            "testpostcode": ["house_name"],
+            "fields": {
+                "property": {
+                    "raw": "serviceunit"
+                },
+                "rounds": {
+                    "recycling": {
+                        "round": "collections",
+                        "regex": {
+                            "([A-Za-z]+) [A-Za-z0-9 ]+": "$1"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "name": "refuse.csv",
+            "parse_options": {
+                "columns": true
+            },
+            "testpostcode": ["house_name"],
+            "fields": {
+                "property": {
+                    "raw": "serviceunit"
+                },
+                "rounds": {
+                    "refuse": {
+                        "round": "round"
+                    }
+                }
+            }
+        }
+
+    ]
+}
