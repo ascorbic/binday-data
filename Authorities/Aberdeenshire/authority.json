@@ -1,0 +1,35 @@
+{
+    "name": "Aberdeenshire",
+    "code": "S12000034",
+    "files": [
+        {
+            "name": "Refuse Recycling Collections.csv",
+            "skip_rows": 0,
+            "parse_options": {
+                "columns": true
+            },
+            "fields": {
+                "property": {
+                    "uprn": "Property_id (uprn)",
+                    "unit": "sub_address",
+                    "locality": "Locality",
+                    "town": "Town",
+                    "postcode": "post_code",
+                    "raw": "property_address"
+                },
+                "rounds": {
+                    "refuse": {
+                        "round": "REF_collection_day"
+                    },
+                    "recycling": {
+                        "round": "REC_collection_day"
+                    }
+                }
+            }
+                
+            
+
+            
+        }
+    ]
+}
